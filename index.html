@@ -1,0 +1,92 @@
+<html>
+
+<head>
+    <title>Restaurant</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+</head>
+<body>
+
+
+    <div class="container">
+
+        <div id="myBill" class="bill">
+    
+            <div class="bill-content">
+              <span class="close">&times;</span>
+              <div id="billcontent"></div>
+            </div>
+          </div>
+
+   
+          
+     
+
+            <div class="row">
+
+                    <div class="col-md-4">
+                        <div class="left-content">
+                            <h3 align="center">Tables</h3>
+            
+
+                            <input class="input-tables" type="text" placeholder="Search table" name="tablesearch" id="tablesearch" onkeyup="searchingTables()">
+                            <br><br>
+                            
+                                
+                            <div id="tablemenu" style="display: inline-block; float: left ; width:50%"> 
+                                
+                            
+                            </div>
+   
+                            
+
+
+                        </div>
+
+                    </div> 
+                    <div class="col-md-8">
+                        <h3 align="center">Menu</h3>    
+                        <input class="input-menu" type="text" placeholder="Search Menu..by course,by food" name="menusearch" id="menusearch" align="center" onkeyup="searchingMenu()">
+                        <br><br>
+
+                            <div class="items">
+                                <div id="foodmenu">
+
+                                </div>
+                            </div>
+                        
+
+                      
+                    </div>          
+
+            </div>
+
+</div>
+
+<script src="script.js"></script>
+
+<script>
+
+var bill = document.getElementById('myBill');
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() {
+    bill.style.display = "none";
+}
+
+
+
+
+
+
+
+
+
+</script>
+
+
+</body>
+</html>
